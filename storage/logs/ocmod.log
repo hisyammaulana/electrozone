@@ -1,0 +1,520 @@
+2018-12-22 17:33:34 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Bahasa Indonesia System - Premium (by AltDesain)
+----------------------------------------------------------------
+MOD: Default-X Theme
+
+FILE: catalog/controller/information/contact.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 142
+LINE: 200
+
+FILE: catalog/language/en-gb/common/header.php
+CODE: // Text
+LINE: 4
+
+FILE: catalog/controller/product/product.php
+CODE: $this->load->model('catalog/category');
+LINE: 18
+
+FILE: catalog/controller/product/category.php
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_category_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_category_height'));
+LINE: 107
+CODE: if ($category_info['image']) {
+LINE: 109
+
+FILE: catalog/controller/common/home.php
+CODE: $this->document->setKeywords($this->config->get('config_meta_keyword'));
+LINE: 8
+CODE: // Text
+LINE: 4
+
+FILE: admin/model/design/banner.php
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "banner_image SET banner_id = '" . (int)$banner_id . "', language_id = '" . (int)$language_id . "', title = '" .  $this->db->escape($banner_image['title']) . "', link = '" .  $this->db->escape($banner_image['link']) . "', image = '" .  $this->db->escape($banner_image['image']) . "', sort_order = '" .  (int)$banner_image['sort_order'] . "'");
+LINE: 10
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "banner_image SET banner_id = '" . (int)$banner_id . "', language_id = '" . (int)$language_id . "', title = '" .  $this->db->escape($banner_image['title']) . "', link = '" .  $this->db->escape($banner_image['link']) . "', image = '" .  $this->db->escape($banner_image['image']) . "', sort_order = '" . (int)$banner_image['sort_order'] . "'");
+LINE: 28
+CODE: 'sort_order' => $banner_image['sort_order']
+LINE: 94
+
+FILE: admin/controller/design/banner.php
+CODE: $data['banner_images'] = array();
+LINE: 342
+CODE: 'link'       => $banner_image['link'],
+LINE: 361
+
+FILE: admin/view/template/design/banner_form.twig
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + ', .tooltip\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+LINE: 131
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + ', .tooltip\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+LINE: 111
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}, .tooltip').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 132
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}, .tooltip').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 82
+
+FILE: admin/language/en-gb/design/banner.php
+CODE: // Heading
+LINE: 10
+CODE: $this->document->setKeywords($this->config->get('config_meta_keyword'));
+LINE: 14
+
+FILE: admin/view/template/setting/setting.twig
+CODE: <input type="text" name="config_fax" value="{{ config_fax }}" placeholder="{{ entry_fax }}" id="input-fax" class="form-control" />
+LINE: 184
+
+FILE: admin/controller/setting/setting.php
+CODE: if (isset($this->request->post['config_image'])) {
+LINE: 286
+
+FILE: admin/language/en-gb/setting/setting.php
+CODE: $_['entry_fax']                      = 'Fax';
+LINE: 53
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['contact'] = $this->url->link('information/contact');
+LINE: 24
+
+FILE: catalog/language/en-gb/common/cart.php
+CODE: // Text
+LINE: 2
+CODE: // Text
+LINE: 3
+CODE: $data['captcha_pages'] = array();
+LINE: 686
+CODE: $_['heading_title']
+LINE: 5
+
+FILE: catalog/controller/common/header.php
+CODE: $data['menu'] = $this->load->controller('common/menu');
+LINE: 94
+CODE: return $this->load->view('common/header', $data);
+LINE: 137
+----------------------------------------------------------------
+MOD: Payment Bank Transfer
+
+FILE: catalog/view/theme/default/template/checkout/payment_method.twig
+CODE: {{ payment_method.title }}
+LINE: 18
+
+FILE: catalog/view/theme/default_x/template/checkout/payment_method.twig
+CODE: {{ payment_method.title }}
+LINE: 18
+----------------------------------------------------------------
+2019-01-01 13:45:51 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Bahasa Indonesia System - Premium (by AltDesain)
+----------------------------------------------------------------
+MOD: Default-X Theme
+
+FILE: catalog/controller/information/contact.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 142
+LINE: 200
+
+FILE: catalog/language/en-gb/common/header.php
+CODE: // Text
+LINE: 4
+
+FILE: catalog/controller/product/product.php
+CODE: $this->load->model('catalog/category');
+LINE: 18
+
+FILE: catalog/controller/product/category.php
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_category_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_category_height'));
+LINE: 107
+CODE: if ($category_info['image']) {
+LINE: 109
+
+FILE: catalog/controller/common/home.php
+CODE: $this->document->setKeywords($this->config->get('config_meta_keyword'));
+LINE: 8
+CODE: // Text
+LINE: 4
+
+FILE: admin/model/design/banner.php
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "banner_image SET banner_id = '" . (int)$banner_id . "', language_id = '" . (int)$language_id . "', title = '" .  $this->db->escape($banner_image['title']) . "', link = '" .  $this->db->escape($banner_image['link']) . "', image = '" .  $this->db->escape($banner_image['image']) . "', sort_order = '" .  (int)$banner_image['sort_order'] . "'");
+LINE: 10
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "banner_image SET banner_id = '" . (int)$banner_id . "', language_id = '" . (int)$language_id . "', title = '" .  $this->db->escape($banner_image['title']) . "', link = '" .  $this->db->escape($banner_image['link']) . "', image = '" .  $this->db->escape($banner_image['image']) . "', sort_order = '" . (int)$banner_image['sort_order'] . "'");
+LINE: 28
+CODE: 'sort_order' => $banner_image['sort_order']
+LINE: 94
+
+FILE: admin/controller/design/banner.php
+CODE: $data['banner_images'] = array();
+LINE: 342
+CODE: 'link'       => $banner_image['link'],
+LINE: 361
+
+FILE: admin/view/template/design/banner_form.twig
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + ', .tooltip\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+LINE: 131
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + ', .tooltip\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+LINE: 111
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}, .tooltip').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 132
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}, .tooltip').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 82
+
+FILE: admin/language/en-gb/design/banner.php
+CODE: // Heading
+LINE: 10
+CODE: $this->document->setKeywords($this->config->get('config_meta_keyword'));
+LINE: 14
+
+FILE: admin/view/template/setting/setting.twig
+CODE: <input type="text" name="config_fax" value="{{ config_fax }}" placeholder="{{ entry_fax }}" id="input-fax" class="form-control" />
+LINE: 184
+
+FILE: admin/controller/setting/setting.php
+CODE: if (isset($this->request->post['config_image'])) {
+LINE: 286
+
+FILE: admin/language/en-gb/setting/setting.php
+CODE: $_['entry_fax']                      = 'Fax';
+LINE: 53
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['contact'] = $this->url->link('information/contact');
+LINE: 24
+
+FILE: catalog/language/en-gb/common/cart.php
+CODE: // Text
+LINE: 2
+CODE: // Text
+LINE: 3
+CODE: $data['captcha_pages'] = array();
+LINE: 686
+CODE: $_['heading_title']
+LINE: 5
+
+FILE: catalog/controller/common/header.php
+CODE: $data['menu'] = $this->load->controller('common/menu');
+LINE: 94
+CODE: return $this->load->view('common/header', $data);
+LINE: 137
+----------------------------------------------------------------
+MOD: Payment Bank Transfer
+
+FILE: catalog/view/theme/default/template/checkout/payment_method.twig
+CODE: {{ payment_method.title }}
+LINE: 18
+
+FILE: catalog/view/theme/default_x/template/checkout/payment_method.twig
+CODE: {{ payment_method.title }}
+LINE: 18
+----------------------------------------------------------------
+2019-01-01 16:11:58 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Bahasa Indonesia System - Premium (by AltDesain)
+----------------------------------------------------------------
+MOD: Default-X Theme
+
+FILE: catalog/controller/information/contact.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 142
+LINE: 200
+
+FILE: catalog/language/en-gb/common/header.php
+CODE: // Text
+LINE: 4
+
+FILE: catalog/controller/product/product.php
+CODE: $this->load->model('catalog/category');
+LINE: 18
+
+FILE: catalog/controller/product/category.php
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_category_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_category_height'));
+LINE: 107
+CODE: if ($category_info['image']) {
+LINE: 109
+
+FILE: catalog/controller/common/home.php
+CODE: $this->document->setKeywords($this->config->get('config_meta_keyword'));
+LINE: 8
+CODE: // Text
+LINE: 4
+
+FILE: admin/model/design/banner.php
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "banner_image SET banner_id = '" . (int)$banner_id . "', language_id = '" . (int)$language_id . "', title = '" .  $this->db->escape($banner_image['title']) . "', link = '" .  $this->db->escape($banner_image['link']) . "', image = '" .  $this->db->escape($banner_image['image']) . "', sort_order = '" .  (int)$banner_image['sort_order'] . "'");
+LINE: 10
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "banner_image SET banner_id = '" . (int)$banner_id . "', language_id = '" . (int)$language_id . "', title = '" .  $this->db->escape($banner_image['title']) . "', link = '" .  $this->db->escape($banner_image['link']) . "', image = '" .  $this->db->escape($banner_image['image']) . "', sort_order = '" . (int)$banner_image['sort_order'] . "'");
+LINE: 28
+CODE: 'sort_order' => $banner_image['sort_order']
+LINE: 94
+
+FILE: admin/controller/design/banner.php
+CODE: $data['banner_images'] = array();
+LINE: 342
+CODE: 'link'       => $banner_image['link'],
+LINE: 361
+
+FILE: admin/view/template/design/banner_form.twig
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + ', .tooltip\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+LINE: 131
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + ', .tooltip\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+LINE: 111
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}, .tooltip').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 132
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}, .tooltip').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 82
+
+FILE: admin/language/en-gb/design/banner.php
+CODE: // Heading
+LINE: 10
+CODE: $this->document->setKeywords($this->config->get('config_meta_keyword'));
+LINE: 14
+
+FILE: admin/view/template/setting/setting.twig
+CODE: <input type="text" name="config_fax" value="{{ config_fax }}" placeholder="{{ entry_fax }}" id="input-fax" class="form-control" />
+LINE: 184
+
+FILE: admin/controller/setting/setting.php
+CODE: if (isset($this->request->post['config_image'])) {
+LINE: 286
+
+FILE: admin/language/en-gb/setting/setting.php
+CODE: $_['entry_fax']                      = 'Fax';
+LINE: 53
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['contact'] = $this->url->link('information/contact');
+LINE: 24
+
+FILE: catalog/language/en-gb/common/cart.php
+CODE: // Text
+LINE: 2
+CODE: // Text
+LINE: 3
+CODE: $data['captcha_pages'] = array();
+LINE: 686
+CODE: $_['heading_title']
+LINE: 5
+
+FILE: catalog/controller/common/header.php
+CODE: $data['menu'] = $this->load->controller('common/menu');
+LINE: 94
+CODE: return $this->load->view('common/header', $data);
+LINE: 137
+----------------------------------------------------------------
+MOD: Payment Bank Transfer
+
+FILE: catalog/view/theme/default/template/checkout/payment_method.twig
+CODE: {{ payment_method.title }}
+LINE: 18
+
+FILE: catalog/view/theme/default_x/template/checkout/payment_method.twig
+CODE: {{ payment_method.title }}
+LINE: 18
+----------------------------------------------------------------
+2019-01-01 16:28:41 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Bahasa Indonesia System - Premium (by AltDesain)
+----------------------------------------------------------------
+MOD: Default-X Theme
+
+FILE: catalog/controller/information/contact.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 142
+LINE: 200
+
+FILE: catalog/language/en-gb/common/header.php
+CODE: // Text
+LINE: 4
+
+FILE: catalog/controller/product/product.php
+CODE: $this->load->model('catalog/category');
+LINE: 18
+
+FILE: catalog/controller/product/category.php
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_category_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_category_height'));
+LINE: 107
+CODE: if ($category_info['image']) {
+LINE: 109
+
+FILE: catalog/controller/common/home.php
+CODE: $this->document->setKeywords($this->config->get('config_meta_keyword'));
+LINE: 8
+CODE: // Text
+LINE: 4
+
+FILE: admin/model/design/banner.php
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "banner_image SET banner_id = '" . (int)$banner_id . "', language_id = '" . (int)$language_id . "', title = '" .  $this->db->escape($banner_image['title']) . "', link = '" .  $this->db->escape($banner_image['link']) . "', image = '" .  $this->db->escape($banner_image['image']) . "', sort_order = '" .  (int)$banner_image['sort_order'] . "'");
+LINE: 10
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "banner_image SET banner_id = '" . (int)$banner_id . "', language_id = '" . (int)$language_id . "', title = '" .  $this->db->escape($banner_image['title']) . "', link = '" .  $this->db->escape($banner_image['link']) . "', image = '" .  $this->db->escape($banner_image['image']) . "', sort_order = '" . (int)$banner_image['sort_order'] . "'");
+LINE: 28
+CODE: 'sort_order' => $banner_image['sort_order']
+LINE: 94
+
+FILE: admin/controller/design/banner.php
+CODE: $data['banner_images'] = array();
+LINE: 342
+CODE: 'link'       => $banner_image['link'],
+LINE: 361
+
+FILE: admin/view/template/design/banner_form.twig
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + ', .tooltip\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+LINE: 131
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + ', .tooltip\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+LINE: 111
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}, .tooltip').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 132
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}, .tooltip').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 82
+
+FILE: admin/language/en-gb/design/banner.php
+CODE: // Heading
+LINE: 10
+CODE: $this->document->setKeywords($this->config->get('config_meta_keyword'));
+LINE: 14
+
+FILE: admin/view/template/setting/setting.twig
+CODE: <input type="text" name="config_fax" value="{{ config_fax }}" placeholder="{{ entry_fax }}" id="input-fax" class="form-control" />
+LINE: 184
+
+FILE: admin/controller/setting/setting.php
+CODE: if (isset($this->request->post['config_image'])) {
+LINE: 286
+
+FILE: admin/language/en-gb/setting/setting.php
+CODE: $_['entry_fax']                      = 'Fax';
+LINE: 53
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['contact'] = $this->url->link('information/contact');
+LINE: 24
+
+FILE: catalog/language/en-gb/common/cart.php
+CODE: // Text
+LINE: 2
+CODE: // Text
+LINE: 3
+CODE: $data['captcha_pages'] = array();
+LINE: 686
+CODE: $_['heading_title']
+LINE: 5
+
+FILE: catalog/controller/common/header.php
+CODE: $data['menu'] = $this->load->controller('common/menu');
+LINE: 94
+CODE: return $this->load->view('common/header', $data);
+LINE: 137
+----------------------------------------------------------------
+MOD: Payment Bank Transfer
+
+FILE: catalog/view/theme/default/template/checkout/payment_method.twig
+CODE: {{ payment_method.title }}
+LINE: 18
+
+FILE: catalog/view/theme/default_x/template/checkout/payment_method.twig
+CODE: {{ payment_method.title }}
+LINE: 18
+----------------------------------------------------------------
